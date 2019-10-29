@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e81caa4-e6f6-4e34-b526-aab594ba12d7" name="Default Changelist" comment="" />
+    <list default="true" id="4e81caa4-e6f6-4e34-b526-aab594ba12d7" name="Default Changelist" comment="更换数据库后重写好了登录部分">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/BuildingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/BuildingsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enum/BuildingsType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Enum/NetConnectPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Buildings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/BuildingsRequestProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/BuildingsResponseProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/RegisterRequestProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/RegisterResponseProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tam.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserSaveDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enum/RequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enum/RequestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/UserSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servers/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servers/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servers/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servers/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/ControllerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/ControllerManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserSaveDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Handler/RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Handler/RequestHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/UserSave.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Proto/LoginRequestProto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Proto/LoginRequestProto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Proto/LoginResponseProto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Proto/LoginResponseProto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servers/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servers/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servers/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servers/Server$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servers/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servers/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tools/ConnHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools/ConnHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/towerandmerchant.sql" beforeDir="false" afterPath="$PROJECT_DIR$/towerandmerchant.sql" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,16 +65,19 @@
     <expand />
     <select />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../TowerAndMerchantServer_Demo_V1.0\exportToHTML" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/BuildingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-321">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="273">
+              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,19 +86,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java">
+        <entry file="file://$PROJECT_DIR$/tam.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/towerandmerchant.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="76">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1935">
-              <caret line="149" column="35" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="35" />
+            <state relative-caret-position="149">
+              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,65 +119,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Servers/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="115" column="83" selection-start-line="115" selection-start-column="71" selection-end-line="115" selection-end-column="83" />
+            <state relative-caret-position="149">
+              <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3259#3260#0" expanded="true" />
+                <element signature="docComment;method#SendResponseToClient#0;class#Server#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DAO/BuildingsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Enum/ReturnType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/UserSave.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeRequestProto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeResponseProto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="1995">
+              <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,23 +158,15 @@
       <find>toString</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Tools/Tool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Tools/ConvertTool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Enum/RequestType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/DeafultController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/DefaultController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Enum/ReturnType.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmailVerifySystem/Email.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Enum/ActionType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servers/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProtocolData/RegisterData.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProtocolData/LoginData.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProtocolData/RegisterRequestData.java" />
@@ -178,20 +181,48 @@
         <option value="$PROJECT_DIR$/src/main/java/Proto/BaseProto.java" />
         <option value="$PROJECT_DIR$/src/main/java/Proto/BaseRequestProto.java" />
         <option value="$PROJECT_DIR$/src/main/java/Proto/BaseResponseProto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Servers/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/Handler/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/Handler/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeRequestProto.java" />
         <option value="$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeResponseProto.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/UserSave.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Enum/NetConnectPort.java" />
+        <option value="$PROJECT_DIR$/towerandmerchant.sql" />
+        <option value="$PROJECT_DIR$/tam.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/DAO/UserSaveDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Servers/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Servers/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Proto/RegisterRequestProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Base.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Proto/RegisterResponseProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Enum/RequestType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/MainBaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Proto/BuildingsRequestProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Enum/BuildingsType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/DynamicBuildings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Proto/BuildingsResponseProto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DAO/BuildingsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Buildings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/BuildingsController.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -203,17 +234,120 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="y" value="30" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1020" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EmailVerifySystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Enum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Proto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Servers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TowerAndMerchantServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TowerAndMerchantServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,12 +356,26 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555321587660" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.09756097" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\TowerAndMerchantServer" />
+      <recent name="H:\TowerAndMerchantServer\src" />
+      <recent name="H:\TowerAndMerchantServer\src\main" />
+      <recent name="H:\TowerAndMerchantServer\target" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,37 +446,64 @@
       <workItem from="1561103704138" duration="605000" />
       <workItem from="1561190648876" duration="1691000" />
       <workItem from="1561197187809" duration="300000" />
+      <workItem from="1569656026629" duration="4478000" />
+      <workItem from="1569937109448" duration="3012000" />
+      <workItem from="1570427328467" duration="837000" />
+      <workItem from="1570622118194" duration="4372000" />
+      <workItem from="1570782637464" duration="1524000" />
+      <workItem from="1570784203726" duration="4766000" />
+      <workItem from="1570793443094" duration="4632000" />
+      <workItem from="1570800978201" duration="320000" />
+      <workItem from="1570878782913" duration="13000" />
+      <workItem from="1570949363420" duration="6181000" />
+      <workItem from="1571145254746" duration="6636000" />
+      <workItem from="1571184551805" duration="3326000" />
+      <workItem from="1571378530126" duration="496000" />
+      <workItem from="1571928794677" duration="3382000" />
+      <workItem from="1571932332758" duration="21000" />
+      <workItem from="1571996274786" duration="251000" />
+      <workItem from="1572175630888" duration="1255000" />
+      <workItem from="1572239581487" duration="2585000" />
+      <workItem from="1572322522296" duration="160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76478000" />
+    <option name="totallyTimeSpent" value="125473000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28016084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3264075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.016759777" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.174581" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.28895184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25354108" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3282123" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,162 +513,410 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.3297587" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="登录方式从邮箱更改为账号" />
+    <MESSAGE value="更换数据库后重写好了登录部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="更换数据库后重写好了登录部分" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/DeafultController.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Math.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/Tool.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/BaseResponseProto.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/ProtoData.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20160810/json-20160810.jar!/org/json/JSONObject.class" />
+    <entry file="file://$PROJECT_DIR$/target/classes/DAO/UserDao.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="399">
+          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#3515#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/Servers/Client.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="-455">
+          <folding>
+            <element signature="e#0#1357#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmailVerifySystem/Email.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/Enum/RequestType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state>
+          <folding>
+            <element signature="e#0#204#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/ConvertTool.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/DAO/UserSaveDao.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/NetConnectPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+        <state relative-caret-position="779">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/Enum/NetConnectPort.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Servers/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        <state relative-caret-position="20">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#1062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="57">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/LoginData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/RegisterData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/RegisterRequestData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/RegisterResponseData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/LoginRequestData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/LoginResponseData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/GetSecurityCodeRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/BaseData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/GetSecurityCodeResponseData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProtocolData/GetSecurityCodeRequestData.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/ConvertTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/Tool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/DefaultController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="76">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/BaseProto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/BaseRequestProto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/BaseResponseProto.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/ProtoData.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/Request.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmailVerifySystem/Email.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20160810/json-20160810.jar!/org/json/JSONObject.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="66" column="265" selection-start-line="66" selection-start-column="265" selection-end-line="66" selection-end-column="265" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/ActionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserSaveDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2600">
-          <caret line="109" column="66" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/RequestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-544">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/Response.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Servers/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#DecreaseHP#0;class#Client#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.0.12.Final/netty-all-4.0.12.Final-sources.jar!/io/netty/channel/DefaultChannelHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="337" column="46" selection-start-line="337" selection-start-column="46" selection-end-line="337" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+          <folding>
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/ReturnType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.0.12.Final/netty-all-4.0.12.Final-sources.jar!/io/netty/channel/AbstractChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="296" selection-start-line="296" selection-end-line="296" />
+          <folding>
+            <element signature="e#8296#8297#0" expanded="true" />
+            <element signature="e#8333#8334#0" expanded="true" />
+            <element signature="e#8568#8569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeResponseProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc;n#getAccounts#0;n#LoginRequestProto#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeRequestProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/RequestType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/ActionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/RegisterRequestProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/BuildingsRequestProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/BuildingsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/FixedBuildings.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="149" column="35" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="35" />
+        <state relative-caret-position="-669">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#UpdateNickName#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/RegisterResponseProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Buildings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/BuildingsResponseProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="docComment;method#packJsonData#0;class#BuildingsResponseProto#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DAO/BuildingsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/towerandmerchant.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -502,53 +925,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Servers/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="115" column="83" selection-start-line="115" selection-start-column="71" selection-end-line="115" selection-end-column="83" />
+        <state relative-caret-position="149">
+          <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3259#3260#0" expanded="true" />
+            <element signature="docComment;method#SendResponseToClient#0;class#Server#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/tam.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Enum/ReturnType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/BuildingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/UserSave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeRequestProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Proto/GetSecurityCodeResponseProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="273">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

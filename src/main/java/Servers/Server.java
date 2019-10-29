@@ -82,7 +82,6 @@ public class Server {
                             currentOnlineClientList.add(client);
                             System.out.println("channel为"+channel+ "的Client已创建");
                             channel.pipeline().addLast(new RequestHandler());//客户端触发操作。注册客户端触发的操作
-
                         }
 
                     });
@@ -105,7 +104,6 @@ public class Server {
      * @param actionType 响应类型
      * @param clientChannel 需要得到该响应的客户端
      */
-
     public void SendResponseToClient(Object responseDataObj, ActionType actionType,Channel clientChannel)
     {
         //注意：并不会把actionType直接作为一个部分，拼接发送出去，actiontype是用于来创建Response对象的
@@ -120,6 +118,5 @@ public class Server {
         clientChannel.write(byteBuf);
         clientChannel.flush();
     }
-
 
 }

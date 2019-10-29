@@ -70,6 +70,5 @@ public class RequestHandler extends ChannelInboundHandlerAdapter {
         RequestType requestType=RequestType.values()[requestFromClient.requestType];
         ActionType actionType=ActionType.values()[requestFromClient.actionType];
         Server.Instance().getControllerManager().HandleRequeust(requestType,actionType,requestFromClient.jsonData,ctx.channel());
-
     }
 }

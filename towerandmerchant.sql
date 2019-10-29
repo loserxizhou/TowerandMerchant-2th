@@ -15,7 +15,7 @@ Date: 2019-03-20 22:28:20
 
 SET FOREIGN_KEY_CHECKS=0;
 
--- ----------------------------
+-- ----------------------------+
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;

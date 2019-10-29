@@ -1,7 +1,7 @@
 package Servers;
 
 import Model.User;
-import Model.UserSave;
+import Model.Base;
 import io.netty.channel.socket.SocketChannel;
 
 import java.sql.Connection;
@@ -13,9 +13,8 @@ public class Client {
 
     //Client对象的玩家信息
     public User user;//当前用户
-    public UserSave userSave;//当前玩家的游戏信息
+    public Base base;//当前玩家的游戏信息
     public int CurrentHP;//当前血量
-
 
     public SocketChannel getSocketChannel(){
         return socketChannel;
@@ -60,7 +59,5 @@ public class Client {
         {
             System.out.println("关闭客户端时发生异常，异常信息为:"+e);
         }
-
     }
-
 }

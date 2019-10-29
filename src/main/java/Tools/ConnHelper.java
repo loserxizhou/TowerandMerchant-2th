@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class ConnHelper {
-    private static final String URL="jdbc:mysql://localhost:3306/towerandmerchant"+"?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+    private static final String URL="jdbc:mysql://localhost:3306/tam"+"?useUnicode=true&characterEncoding=utf-8&useSSL=false";
     private static final String USER="root";
-    private static final String PW="660317";
+    private static final String PW="zc0703th";
 
     /**
      *与MySql数据库进行连接
@@ -25,7 +25,4 @@ public class ConnHelper {
             return null;
         }
     }
-
-
-
 }

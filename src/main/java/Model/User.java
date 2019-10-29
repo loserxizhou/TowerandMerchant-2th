@@ -1,32 +1,32 @@
 package Model;
 
 public class User {
-    private int id;
-    private String email;
+    private String uuid;
+    private String account;
     private String password;
     private String idcard;
 
-    public User(int id,String email,String password,String idcard)
+    public User(String uuid,String account,String password,String idcard)
     {
-        this.id=id;
-        this.email=email;
+        this.uuid=uuid;
+        this.account=account;
         this.password=password;
         this.idcard=idcard;
     }
-    public int getId() {
-        return id;
+    public String getUuid() {
+        return uuid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 
-    public String getEmail() {
-        return email;
+    public String getAccount() {
+        return account;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
     public String getPassword() {

@@ -6,41 +6,38 @@ import sun.dc.pr.PRError;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.UUID;
 
 public class UserDao {
     /**
-     * 判断所输入的邮箱是否已经存在
+     * 判断所输入的账号是否已经存在
      * @param conn
-     * @param email
+     * @param account
      * @return
      */
-    public static boolean JudgeEmailExist(Connection conn,String email)
+    public static boolean JudgeAccountExist(Connection conn,String account)
     {
-        String selectSqlStr="SELECT * FROM user WHERE email=?";
+        String selectSqlStr="SELECT * FROM t_user WHERE account=?";
         try {
             PreparedStatement preparedStatement = conn.prepareStatement(selectSqlStr);
-            preparedStatement.setString(1,email);
+            preparedStatement.setString(1,account);
             ResultSet resultSet= preparedStatement.executeQuery();
             if(!resultSet.next())
             {
                 resultSet.close();
                 preparedStatement.close();
-                //说明不存在当前这个邮箱的记录
+                //说明不存在当前这个账号的记录
                 return false;
-
             }else{
                 resultSet.close();
                 preparedStatement.close();
-                //说明存在当前这个邮箱的记录
+                //说明存在当前这个账号的记录
                 return true;
             }
-
-
-
-        }catch (Exception e)
+        }
+        catch (Exception e)
         {
-
-            System.out.println("判断输入邮箱是否存在时出现异常，异常信息为："+e);
+            System.out.println("判断输入账号是否存在时出现异常，异常信息为："+e);
         }
         return true;//如果该处出现了错误，返回为真，保证后面的逻辑执行不下去
     }
@@ -48,43 +45,42 @@ public class UserDao {
     /**
      * 加入一条用户记录
      * @param conn
-     * @param email
+     * @param account
      * @param password
      * @return
      */
-    public static boolean InsertUser(Connection conn,String email,String password,String idcard)
+    public static boolean InsertUser(Connection conn,String account,String password)
     {
-        //先检查是否存在
-        boolean isExist=JudgeEmailExist(conn,email);
+        boolean isExist=JudgeAccountExist(conn,account);
         if(!isExist)
         {
-            String insertSqlStr="INSERT INTO user(email,password,idcard) VALUES (?,?,?)";
+            String user_uuid = UUID.randomUUID().toString().replaceAll("-", "");
+            String insertSqlStr="INSERT INTO t_user(user_uuid,account,password) VALUES (?,?,?)";
             try {
                 PreparedStatement preparedStatement = conn.prepareStatement(insertSqlStr);
-                preparedStatement.setString(1,email);
-                preparedStatement.setString(2,password);
-                preparedStatement.setString(3,idcard);
+                preparedStatement.setString(1,user_uuid);
+                preparedStatement.setString(2,account);
+                preparedStatement.setString(3,password);
+                //preparedStatement.setString(3,idcard);
                 int effectRows= preparedStatement.executeUpdate();
                 preparedStatement.close();
                 if(effectRows>0)
                 {
-
                     //说明加入玩家记录成功
                     //为这个玩家创建UserSave记录-先查到这个玩家的id
-                    String selectSqlStr="SELECT * FROM user WHERE email=?";
+                    String selectSqlStr="SELECT * FROM t_user WHERE user_uuid=?";
                     PreparedStatement preparedStatement1=conn.prepareStatement(selectSqlStr);
-                    preparedStatement1.setString(1,email);
+                    preparedStatement1.setString(1,user_uuid);
                     ResultSet resultSet=preparedStatement1.executeQuery();
 
                     if(resultSet.next())
                     {
-                      int uid=resultSet.getInt("id");
+                      String useruuid=resultSet.getString("user_uuid");
                       //创建这个用户对应的usersave
-                      UserSaveDao.CreatSaveForUser(conn,uid);
+                      BaseDao.CreatSaveForUser(conn,useruuid,account);
                     }
                     resultSet.close();
                     preparedStatement1.close();
-
                 }
             }catch (Exception e)
             {
@@ -94,31 +90,30 @@ public class UserDao {
             //该记录存在，插入失败
             return false;
         }
-        return false;
-
+        return true;
     }
 
     /**
      * 用户登录
      * @param conn
-     * @param email
+     * @param account
      * @param password
      * @return
      */
-    public static User UserLogin(Connection conn,String email,String password)
+    public static User UserLogin(Connection conn,String account,String password)
     {
-        String selectSqlStr="SELECT * FROM user WHERE email=? AND password=?";
+        String selectSqlStr="SELECT * FROM t_user WHERE account=? AND password=?";
         try{
             PreparedStatement preparedStatement=conn.prepareStatement(selectSqlStr);
-            preparedStatement.setString(1,email);
+            preparedStatement.setString(1,account);
             preparedStatement.setString(2,password);
             ResultSet resultSet=preparedStatement.executeQuery();
             User user=null;
             if(resultSet.next())
             {
-                int uid=resultSet.getInt("id");
+                String uuid=resultSet.getString("user_uuid");
                 String idcard=resultSet.getString("idcard");
-                 user=new User(uid,email,password,idcard);
+                user=new User(uuid,account,password,idcard);
             }
             resultSet.close();
             preparedStatement.close();
