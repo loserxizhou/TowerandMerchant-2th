@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TowerAndMerchantServer" />
+        <module name="TaM" />
         <module name="TowerAndMerchantServer_Demo_V1.0" />
+        <module name="TowerAndMerchantServer" />
       </profile>
     </annotationProcessing>
   </component>
