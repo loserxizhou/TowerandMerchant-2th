@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TowerAndMerchantServer">
+    <output-path>$PROJECT_DIR$/out/artifacts/TowerAndMerchantServer</output-path>
+    <root id="archive" name="TowerAndMerchantServer.war" />
+  </artifact>
+</component>

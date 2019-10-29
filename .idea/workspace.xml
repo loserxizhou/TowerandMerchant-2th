@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e81caa4-e6f6-4e34-b526-aab594ba12d7" name="Default Changelist" comment="更换数据库后重写好了登录部分">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/BuildingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/BuildingsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enum/BuildingsType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Enum/NetConnectPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Buildings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/BuildingsRequestProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/BuildingsResponseProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/RegisterRequestProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Proto/RegisterResponseProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tam.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ControllerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserSaveDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enum/RequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enum/RequestType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Handler/RequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/UserSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proto/LoginRequestProto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servers/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servers/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servers/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servers/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tools/ConnHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/ControllerManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/ControllerManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DAO/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DAO/UserSaveDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Handler/RequestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Handler/RequestHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/UserSave.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Proto/LoginRequestProto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Proto/LoginRequestProto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Proto/LoginResponseProto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Proto/LoginResponseProto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servers/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servers/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servers/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servers/Server$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servers/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servers/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tools/ConnHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tools/ConnHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/towerandmerchant.sql" beforeDir="false" afterPath="$PROJECT_DIR$/towerandmerchant.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -107,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="722">
               <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -119,11 +80,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Servers/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="684">
               <caret line="69" column="81" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3259#3260#0" expanded="true" />
                 <element signature="docComment;method#SendResponseToClient#0;class#Server#0" />
               </folding>
             </state>
@@ -464,12 +424,20 @@
       <workItem from="1571996274786" duration="251000" />
       <workItem from="1572175630888" duration="1255000" />
       <workItem from="1572239581487" duration="2585000" />
-      <workItem from="1572322522296" duration="160000" />
+      <workItem from="1572322522296" duration="230000" />
     </task>
+    <task id="LOCAL-00001" summary="更换数据库后重写好了登录部分">
+      <created>1572322742733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572322742733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125473000" />
+    <option name="totallyTimeSpent" value="125543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,7 +452,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3264075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33109918" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -501,8 +469,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32719547" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -906,13 +874,6 @@
     <entry file="file://$PROJECT_DIR$/towerandmerchant.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Proto/LoginResponseProto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -945,6 +906,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
