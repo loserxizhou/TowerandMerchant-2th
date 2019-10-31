@@ -1,6 +1,34 @@
 package Model;
 
 public class Base {
+    public String getBase_uuid() {
+        return base_uuid;
+    }
+
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public int getUser_level() {
+        return user_level;
+    }
+
+    public void setBase_uuid(String base_uuid) {
+        this.base_uuid = base_uuid;
+    }
+
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
+    }
+
+    public void setUser_level(int user_level) {
+        this.user_level = user_level;
+    }
+
+    public void setExp(int exp) {
+        this.exp = exp;
+    }
+
     private String base_uuid;
     private String user_name="";
     private int user_level;
@@ -21,6 +49,23 @@ public class Base {
         this.wood=wood;
         this.iron=iron;
         this.wheat=wheat;
+    }
+
+    public Base(){}
+
+    @Override
+    public String toString() {
+        return "Base{" +
+                "base_uuid='" + base_uuid + '\'' +
+                ", user_name='" + user_name + '\'' +
+                ", user_level=" + user_level +
+                ", coin=" + coin +
+                ", diamond=" + diamond +
+                ", exp=" + exp +
+                ", wood=" + wood +
+                ", iron=" + iron +
+                ", wheat=" + wheat +
+                '}';
     }
 
     public String getUsername() {

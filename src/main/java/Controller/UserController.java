@@ -1,5 +1,6 @@
 package Controller;
 
+import DAO.IBaseDao;
 import DAO.UserDao;
 import DAO.BaseDao;
 import EmailVerifySystem.Email;
@@ -15,6 +16,7 @@ import Enum.ReturnType;
 import Enum.ActionType;
 import java.util.Random;
 import Enum.RequestType;
+import utils.DaoUtils;
 
 public class UserController extends BaseController {
 
@@ -69,6 +71,14 @@ public class UserController extends BaseController {
         LoginRequestProto loginRequestProto=new LoginRequestProto(jsonData);
         String account=loginRequestProto.getAccounts();
         String password=loginRequestProto.getPassword();
+
+        //-------------------------------------------------------
+        //        User user1 = new User();
+        //        user1.setAccount(account);
+        //        user1.setPassword(password);
+        //---------------------------------------------------------
+
+
         User user=UserDao.UserLogin(client.getMysqlConn(),account,password);
         if(user!=null)
         {
@@ -112,8 +122,18 @@ public class UserController extends BaseController {
         String []dataStrArr=data.split("#");
         String useid=dataStrArr[0];
         String nickname=dataStrArr[1];
-        boolean isSuccessful=BaseDao.UpdateNickNameByUserid(client.getMysqlConn(),useid,nickname);
-        if(isSuccessful)
+
+        //-----------------------------------------------------
+        //使用dao工具类去获取一个mybatis的dao代理对象
+        IBaseDao baseDao = (IBaseDao) new DaoUtils(BaseDao.class).getDao();
+        Base base = new Base();
+        base.setUser_name(nickname);
+        base.setBase_uuid(useid);
+        int isSuccessful = baseDao.UpdateNickNameByUserid(base);
+        //-----------------------------------------------------
+
+        // boolean isSuccessful=BaseDao.UpdateNickNameByUserid(client.getMysqlConn(),useid,nickname);
+        if(isSuccessful>0)
         {
             return String.valueOf(ReturnType.Successful.ordinal());
         }else {

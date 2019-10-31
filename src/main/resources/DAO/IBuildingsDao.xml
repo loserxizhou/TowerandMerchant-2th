@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DAO.IBuildingsDao">
+    <!--创建建筑，保存在t_xxx_building表中，同时建立中间表t_base_xxx_building-->
+    <insert id="CreatSaveForUser" parameterType="User">
+        INSERT INTO t_base(base_uuid,user_name) VALUES (?,?)
+    </insert>
+</mapper>

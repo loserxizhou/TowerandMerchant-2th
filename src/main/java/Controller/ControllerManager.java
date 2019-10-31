@@ -41,6 +41,8 @@ public class ControllerManager {
      */
     public void HandleRequeust(RequestType requestType, ActionType actionType, String jsonData, Channel clientChannel)
     {
+        //requestType  所要操作的bean的类名
+        //actionType   操作的方法名称
         BaseController controller=controllerDictionary.get(requestType);
         if(controller==null)
         {

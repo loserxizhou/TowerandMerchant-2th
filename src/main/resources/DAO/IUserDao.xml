@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DAO.IUserDao">
+    <!--根据输入的account值查找用户是否存在-->
+    <select id="JudgeAccountExist" parameterType="string" resultType="User">
+        select * from t_user where account=#{account}
+    </select>
+
+    <!--加入一条用户记录-->
+    <update id="InsertUser" parameterType="User">
+        insert into t_user(user_uuid,account,password) value (#{uuid},#{account},#{password});
+    </update>
+
+    <!--用户登录-->
+    <select id="UserLogin" parameterType="User" resultType="User">
+        select * from t_user where account=#{account} and password=#{password};
+    </select>
+</mapper>

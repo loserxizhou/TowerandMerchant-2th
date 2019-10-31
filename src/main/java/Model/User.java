@@ -5,6 +5,7 @@ public class User {
     private String account;
     private String password;
     private String idcard;
+    public User(){}
 
     public User(String uuid,String account,String password,String idcard)
     {

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DAO.IBaseDao">
+    <!--插入一条base信息-->
+    <insert id="CreatSaveForUser" parameterType="Base">
+        insert into t_base(base_uuid,user_name) value (#{base_uuid},#{user_name})
+    </insert>
+    <!--根据插入的base信息创建一个中间表-->
+    <insert id="CreatSaveMiddle" parameterType="User_base_middle">
+        insert into t_user_base(user_base_uuid,user_uuid,base_uuid) value (#{user_base_uuid},#{user_uuid},#{base_uuid})
+    </insert>
+    <!--通过用户的id获得用户的数据t_base-->
+    <select id="GetUserSaveByUserid" parameterType="string" resultType="Base">
+        select b.* from t_user u
+        left outer join t_user_base ub on u.user_uuid=ub.user_uuid
+        left outer join t_base b on ub.base_uuid=b.base_uuid
+        where u.user_uuid = #{user_uuid};
+    </select>
+    <!--通过用户的id来修改用户的游戏昵称-->
+    <update id="UpdateNickNameByUserid" parameterType="Base">
+        UPDATE t_base SET user_name=#{user_name} WHERE base_uuid=#{base_uuid};
+    </update>
+</mapper>
